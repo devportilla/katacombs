@@ -1,5 +1,6 @@
 package com.portilla.katacombs
 
+import com.portilla.katacombs.player.PlayerCreator
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -7,7 +8,7 @@ import io.mockk.runs
 import org.junit.jupiter.api.Test
 import java.util.*
 
-class ControllerTest {
+class GameControllerTest {
     private val creator: PlayerCreator = mockk()
     private val controller = GameController(creator)
 

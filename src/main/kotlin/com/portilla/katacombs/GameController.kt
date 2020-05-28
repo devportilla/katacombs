@@ -1,5 +1,7 @@
 package com.portilla.katacombs
 
+import com.portilla.katacombs.player.PlayerCreator
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/katacomb")
-class GameController(private val playerCreator: PlayerCreator) {
+class GameController(@Autowired private val playerCreator: PlayerCreator) {
 
     @PostMapping("/player")
     fun create(@RequestBody createPlayerRequest: CreatePlayerRequest): ResponseEntity<Unit> {

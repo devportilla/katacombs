@@ -1,4 +1,4 @@
-package com.portilla.katacombs
+package com.portilla.katacombs.player
 
 import java.io.Serializable
 import java.util.*

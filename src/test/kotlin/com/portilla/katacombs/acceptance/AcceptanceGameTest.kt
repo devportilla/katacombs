@@ -32,7 +32,7 @@ class AcceptanceGameTest {
             contentType = MediaType.APPLICATION_JSON
             content = ObjectMapper().writeValueAsString(
                 CreatePlayerRequest(
-                    PlayerDTO(playerId, "potato")
+                    PlayerDTO(playerId, "Indiana Jones")
                 )
             )
             accept = MediaType.APPLICATION_JSON
